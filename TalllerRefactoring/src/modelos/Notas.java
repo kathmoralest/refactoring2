@@ -6,6 +6,9 @@ public class Notas {
     private double nlecciones;
     private double ntalleres;
     private double neberes;
+    private double notaInicial;
+    private double notaFinal;
+    private double notaTotal;
 
     public double getNexamen() {
         return nexamen;
