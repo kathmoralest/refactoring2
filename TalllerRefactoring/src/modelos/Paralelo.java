@@ -38,5 +38,7 @@ public class Paralelo {
         //No es necesario implementar
     }
     
-    
+    public String toString(){
+        return "Palalelo numero: " +String.valueOff(numero)+"\nMateria: "+materia.getNombre()+ "\nProfesor: "+profesor.getNombre()+;
+    }
 }
