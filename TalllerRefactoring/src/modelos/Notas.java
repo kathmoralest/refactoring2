@@ -5,7 +5,7 @@ public class Notas {
     private double nexamen;
     private double nlecciones;
     private double ntalleres;
-    private double ndeberes;
+    private double neberes;
 
     public double getNexamen() {
         return nexamen;
@@ -37,6 +37,27 @@ public class Notas {
 
     public void setNdeberes(double ndeberes) {
         this.ndeberes = ndeberes;
+    }
+    
+    public double calcularNota(Estudiante e){
+        double nota=0;
+        for(Paralelo par:e.getParalelos()){
+            double notaTeorico=(nexamen()+ndeberes()+nlecciones())*0.80;
+            double notaPractico=(nota.ntalleres())*0.20;
+            notaInicial=notaTeorico+notaPractico;
+            }
+        }
+        return nota;
+    }
+
+    public double calcularNotaTotal(Estudiante e){
+        double notaTotal=0;
+        for(Paralelo par:e.getParalelos()){
+            if(p.equals(par)){
+                notaTotal=( calcularNota(e)+ calcularNota(e))/2;
+            }
+        }
+        return notaTotal;  
     }
        
 }
